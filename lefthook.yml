@@ -1,0 +1,11 @@
+pre-commit:
+  commands:
+    whitespace:
+      run: git diff --cached --check
+    standalone:
+      run: npm run check:standalone
+
+pre-push:
+  commands:
+    typecheck:
+      run: npm run typecheck

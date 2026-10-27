@@ -1,0 +1,15 @@
+- insert:
+    - id: rsi-paper
+      name: '@yawenzzz/dsh-rsi/paper'
+      config:
+        objective: Research prospective market forecasts using retained evidence and a simulated account.
+        writerLeasePath: !!js dshHomePath('rsi/writer')
+        autoTick: false
+        ledger:
+          initialCapitalMicros: 10000000000
+          perEventLimitMicros: 25000000
+          totalExposureLimitMicros: 500000000
+          maxDrawdownMicros: 200000000
+        research:
+          enabled: false
+          cwd: !!js process.cwd()

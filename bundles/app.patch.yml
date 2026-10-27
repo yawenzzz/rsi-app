@@ -1,0 +1,10 @@
+- id: system-prompt
+  config:
+    includeHarnessIdentity: false
+    personaPrefix: You are RSI, a general-purpose agent.
+
+- insert:
+    - id: rsi-app
+      name: '@yawenzzz/dsh-rsi'
+      config:
+        role: manager

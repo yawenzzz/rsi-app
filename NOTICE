@@ -1,0 +1,3 @@
+RSI application code extracted from yawenzzz/pm-rsi at e906cf381d.
+Built on DeepSeek Harness and Cordis, distributed under their respective MIT licenses.
+Official DSH code is consumed from npm and is not vendored or patched by this package.

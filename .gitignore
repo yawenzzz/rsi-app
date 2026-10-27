@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.artifacts/
+*.tgz
+.env
+.env.*
+!.env.example
+.credentials*
+.DS_Store
+.rsi/
