@@ -29,6 +29,8 @@ npx --yes --package=@deepseek-ai/dsh@0.2.1-rc.3 dsh --profile rsi --port 3081
 
 安装入口使用 Release 的 `.tgz`，不是 GitHub 自动生成的源码压缩包。前者包含已构建的 Host 和 Client 产物。
 
+从旧 RSI fork 迁移时，请使用新的 profile 或独立的 `DSH_HOME`，不要在同一 profile 同时加载新旧 RSI 应用包。已有项目通过下文的导入工具预检后迁移。
+
 ## 从独立仓库运行
 
 需要 Node.js 24.9+、npm，以及 DSH 插件安装命令使用的 pnpm。
@@ -109,8 +111,8 @@ Polymarket 数据、策略评估、模拟账本和发布检查模块保留在 `s
 
 ```sh
 npm run typecheck
-npm test
 npm run build
+npm test
 npm run test:integration
 npm run check:standalone
 npm run test:smoke
